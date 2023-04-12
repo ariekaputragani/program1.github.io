@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program Ganjil Genap</title>
+	<style>
+		body {
+			background: #00d700;
+		}
+		#bil {
+			border-width: 5px;
+			border-color: #000000;
+			width: 100px;
+			height: 25px;
+			font-weight: 900;
+		}
+		button {
+			background: #000000;
+			color: #ffffff;
+			font-weight: 900;
+		}
+	</style>
+	<script>
+		var x;
+		function cek() {
+			x = document.getElementById('bil').value;
+			if(x % 2 == 0) {
+				document.getElementById('p').innerHTML = 'Bilangan Genap';
+			} else {
+				document.getElementById('p').innerHTML = 'Bilangan Ganjil';
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="bil" type="number">
+	<button onclick="cek()">Cek</button>
+	<p id="p"></p>
+</body>
+</html>
